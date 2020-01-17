@@ -151,6 +151,11 @@ table {
   outline: none;
 }
 
+* button {
+  background-color: unset;
+  border: none;
+}
+
 * button:focus {
   outline: 0px dotted;
   outline: 0px auto -webkit-focus-ring-color;
@@ -251,5 +256,73 @@ body .content .pos .win {
 body .content .pos .win:hover {
   background: url("../img/photos/bun_win-1@2x.png");
   background-size: cover;
+}
+
+body .content .content-in {
+  max-width: 1320px;
+  margin: 0 auto;
+}
+
+body .content .content-in .form-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .content .content-in .form-area .fill-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+body .content .content-in .form-area .fill-area .one-item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 50%;
+          flex: 0 0 50%;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+body .content .content-in .form-area .fill-area .one-item .little-title {
+  font-weight: bold;
+  margin: 0 10px;
+}
+
+body .content .content-in .form-area .fill-area .one-item select {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  border-radius: 5px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  color: #555555;
+  padding: 15px;
+  margin: 0 10px;
+  background: url("../img/icons/icn_arrow_d.svg") no-repeat right 10px center #fff;
+}
+
+body .content .content-in .form-area button {
+  background-color: none;
 }
 /*# sourceMappingURL=all.css.map */

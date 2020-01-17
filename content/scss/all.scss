@@ -57,6 +57,11 @@
         }
     }
 
+    button {
+        background-color: unset;
+        border: none;
+    }
+
     button:focus {
         outline: 0px dotted;
         outline: 0px auto -webkit-focus-ring-color;
@@ -153,6 +158,52 @@ body {
                 &:hover {
                     background: url('../img/photos/bun_win-1@2x.png');
                     background-size: cover;
+                }
+            }
+        }
+
+        .content-in {
+            max-width: 1320px;
+            margin: 0 auto;
+
+
+            .form-area {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                .fill-area {
+                    display: flex;
+                    align-items: center;
+                    flex-wrap: wrap;
+
+                    .one-item {
+                        flex: 0 0 50%;
+                        font-size: 20px;
+                        display: flex;
+                        align-items: center;
+                        justify-content: space-between;
+                        margin-bottom: 20px;
+
+                        .little-title {
+                            font-weight: bold;
+                            margin: 0 10px;
+                        }
+
+                        select {
+                            flex-grow: 1;
+                            border-radius: 5px;
+                            appearance: none;
+                            color: #555555;
+                            padding: 15px;
+                            margin: 0 10px;
+                            background: url('../img/icons/icn_arrow_d.svg') no-repeat right 10px center #fff;
+                        }
+                    }
+                }
+
+                button {
+                    background-color: none;
                 }
             }
         }

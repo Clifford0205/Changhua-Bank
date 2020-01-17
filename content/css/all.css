@@ -284,6 +284,9 @@ body .content .content-in .form-area .fill-area {
           align-items: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 86%;
+          flex: 0 0 86%;
 }
 
 body .content .content-in .form-area .fill-area .one-item {
@@ -303,16 +306,26 @@ body .content .content-in .form-area .fill-area .one-item {
   margin-bottom: 20px;
 }
 
+body .content .content-in .form-area .fill-area .one-item:nth-last-child(2) {
+  margin-bottom: 0;
+}
+
+body .content .content-in .form-area .fill-area .one-item:nth-last-child(1) {
+  margin-bottom: 0;
+}
+
 body .content .content-in .form-area .fill-area .one-item .little-title {
   font-weight: bold;
   margin: 0 10px;
+  white-space: nowrap;
 }
 
 body .content .content-in .form-area .fill-area .one-item select {
+  border-radius: 5px;
+  font-size: 16px;
   -webkit-box-flex: 1;
       -ms-flex-positive: 1;
           flex-grow: 1;
-  border-radius: 5px;
   -webkit-appearance: none;
      -moz-appearance: none;
           appearance: none;
@@ -322,7 +335,69 @@ body .content .content-in .form-area .fill-area .one-item select {
   background: url("../img/icons/icn_arrow_d.svg") no-repeat right 10px center #fff;
 }
 
+body .content .content-in .form-area .fill-area .one-item .long {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 48%;
+          flex: 0 0 48%;
+}
+
 body .content .content-in .form-area button {
   background-color: none;
+}
+
+body .content .content-in .form-area button svg .a {
+  fill: url(#c);
+}
+
+body .content .content-in .form-area button svg .b {
+  fill: #fff;
+  font-size: 30px;
+  font-family: NotoSansCJKtc-Bold, Noto Sans CJK TC;
+  font-weight: 700;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .content .content-in .form-area button svg .c {
+  fill: url(#d);
+}
+
+body .content .content-in .form-area button svg stop {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+body .content .content-in .form-area button:hover svg #a stop:first-child {
+  offset: 0;
+  stop-color: #ae1f20;
+}
+
+body .content .content-in .form-area button:hover svg #a stop:last-child {
+  stop-color: #d43b43;
+}
+
+body .content .content-in .form-area button:hover svg #d stop:first-child {
+  stop-color: #f95e65;
+}
+
+body .content .content-in .form-area button:hover svg #d stop:last-child {
+  stop-color: #9b1416;
+}
+
+body .content .content-in .form-area button:hover svg .b {
+  fill: #f2aeae;
+  font-size: 30px;
+  font-family: NotoSansCJKtc-Bold, Noto Sans CJK TC;
+  font-weight: 700;
+}
+
+body .content .content-in .white-area {
+  background-color: #fff;
+  border-radius: 20px;
+  width: 100%;
+  height: 50vh;
+  -webkit-box-shadow: 0px 6px 20px #B15F0080;
+          box-shadow: 0px 6px 20px #B15F0080;
+  margin-top: 40px;
 }
 /*# sourceMappingURL=all.css.map */

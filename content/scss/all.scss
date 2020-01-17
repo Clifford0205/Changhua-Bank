@@ -1,0 +1,164 @@
+@import "reset";
+
+
+
+@mixin xll {
+    @media(min-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin xl {
+    @media (max-width: 1199px) {
+        @content
+    }
+}
+
+;
+
+@mixin lg {
+    @media (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin sm {
+    @media (max-width: 576px) {
+        @content;
+    }
+}
+
+
+
+
+* {
+    font-family: 'Noto Sans CJK TC', '微軟正黑體', sans-serif !important;
+    // font-weight: 200;
+    // box-sizing: border-box;
+
+    a {
+        color: #000;
+
+        &:hover {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+    input {
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button:focus {
+        outline: 0px dotted;
+        outline: 0px auto -webkit-focus-ring-color;
+    }
+}
+
+
+
+.modal-open {
+    padding: 0 !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+
+    .transition {
+        transition: 0.4s;
+    }
+
+
+    .content {
+        background: url('../img/icons/pic_bg.svg') no-repeat;
+        background-attachment: fixed;
+        background-size: cover;
+        min-height: 100vh;
+        position: relative;
+
+        .nav-bar-area {
+            height: 100px;
+            left: 0;
+            right: 0;
+            // position: fixed;
+
+            .brand {
+                margin-top: 25px;
+                margin-left: 45px;
+                display: inline-block;
+
+                .text-hide {
+                    background: url('../img/icons/logo.svg') no-repeat center center;
+                    background-size: cover;
+                    width: 222px;
+                    height: 32px;
+                }
+            }
+        }
+
+
+        .pos {
+            height: 100%;
+            width: 100%;
+            min-height: calc(100vh - 150px);
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+
+
+
+            .two-icons {
+                max-width: 430px;
+                width: 30vw;
+                height: 30vw;
+                margin: 0 15px;
+                display: inline-block;
+
+                @include md {
+                    width: 350px;
+                    height: 350px;
+                }
+
+
+                img {
+                    width: 100%;
+                }
+            }
+
+            .lottery {
+                background: url('../img/photos/btn_lott-1@2x.png');
+                background-size: cover;
+
+                &:hover {
+                    background: url('../img/photos/btn_lott@2x.png');
+                    background-size: cover;
+                }
+            }
+
+            .win {
+                background: url('../img/photos/bun_win@2x.png');
+                background-size: cover;
+
+                &:hover {
+                    background: url('../img/photos/bun_win-1@2x.png');
+                    background-size: cover;
+                }
+            }
+        }
+
+
+    }
+
+
+}

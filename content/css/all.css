@@ -1,0 +1,255 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol,
+ul {
+  list-style: none;
+}
+
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  font-family: 'Noto Sans CJK TC', '微軟正黑體', sans-serif !important;
+}
+
+* a {
+  color: #000;
+}
+
+* a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+* input:focus {
+  outline: none;
+}
+
+* button:focus {
+  outline: 0px dotted;
+  outline: 0px auto -webkit-focus-ring-color;
+}
+
+.modal-open {
+  padding: 0 !important;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+body .transition {
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+body .content {
+  background: url("../img/icons/pic_bg.svg") no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 100vh;
+  position: relative;
+}
+
+body .content .nav-bar-area {
+  height: 100px;
+  left: 0;
+  right: 0;
+}
+
+body .content .nav-bar-area .brand {
+  margin-top: 25px;
+  margin-left: 45px;
+  display: inline-block;
+}
+
+body .content .nav-bar-area .brand .text-hide {
+  background: url("../img/icons/logo.svg") no-repeat center center;
+  background-size: cover;
+  width: 222px;
+  height: 32px;
+}
+
+body .content .pos {
+  height: 100%;
+  width: 100%;
+  min-height: calc(100vh - 150px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+body .content .pos .two-icons {
+  max-width: 430px;
+  width: 30vw;
+  height: 30vw;
+  margin: 0 15px;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  body .content .pos .two-icons {
+    width: 350px;
+    height: 350px;
+  }
+}
+
+body .content .pos .two-icons img {
+  width: 100%;
+}
+
+body .content .pos .lottery {
+  background: url("../img/photos/btn_lott-1@2x.png");
+  background-size: cover;
+}
+
+body .content .pos .lottery:hover {
+  background: url("../img/photos/btn_lott@2x.png");
+  background-size: cover;
+}
+
+body .content .pos .win {
+  background: url("../img/photos/bun_win@2x.png");
+  background-size: cover;
+}
+
+body .content .pos .win:hover {
+  background: url("../img/photos/bun_win-1@2x.png");
+  background-size: cover;
+}
+/*# sourceMappingURL=all.css.map */

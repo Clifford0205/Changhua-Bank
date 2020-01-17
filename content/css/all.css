@@ -223,6 +223,20 @@ body .content .nav-bar-area .login {
   cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  body .content .nav-bar-area .login {
+    right: 5%;
+  }
+}
+
+body .content .nav-bar-area .login svg .man {
+  fill: none;
+}
+
+body .content .nav-bar-area .login svg .outer {
+  fill: #fff;
+}
+
 body .content .nav-bar-area .login:hover {
   background-color: #C65C00;
 }
@@ -246,6 +260,7 @@ body .content .pos {
 
 body .content .pos .two-icons {
   max-width: 430px;
+  max-height: 430px;
   width: 30vw;
   height: 30vw;
   margin: 0 15px;
@@ -300,6 +315,16 @@ body .content .content-in .form-area {
           justify-content: space-between;
 }
 
+@media (max-width: 992px) {
+  body .content .content-in .form-area {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
 body .content .content-in .form-area .fill-area {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -312,6 +337,14 @@ body .content .content-in .form-area .fill-area {
   -webkit-box-flex: 0;
       -ms-flex: 0 0 86%;
           flex: 0 0 86%;
+}
+
+@media (max-width: 992px) {
+  body .content .content-in .form-area .fill-area {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+  }
 }
 
 body .content .content-in .form-area .fill-area .one-item {
@@ -335,14 +368,39 @@ body .content .content-in .form-area .fill-area .one-item:nth-last-child(2) {
   margin-bottom: 0;
 }
 
+@media (max-width: 768px) {
+  body .content .content-in .form-area .fill-area .one-item:nth-last-child(2) {
+    margin-bottom: 20px;
+  }
+}
+
 body .content .content-in .form-area .fill-area .one-item:nth-last-child(1) {
   margin-bottom: 0;
+}
+
+@media (max-width: 992px) {
+  body .content .content-in .form-area .fill-area .one-item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 body .content .content-in .form-area .fill-area .one-item .little-title {
   font-weight: bold;
   margin: 0 10px;
   white-space: nowrap;
+}
+
+@media (max-width: 992px) {
+  body .content .content-in .form-area .fill-area .one-item .little-title {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    margin-bottom: 10px;
+  }
 }
 
 body .content .content-in .form-area .fill-area .one-item .small-form {
@@ -358,6 +416,12 @@ body .content .content-in .form-area .fill-area .one-item .small-form {
   padding: 15px;
   margin: 0 10px;
   background: url("../img/icons/icn_arrow_d.svg") no-repeat right 10px center #fff;
+}
+
+@media (max-width: 992px) {
+  body .content .content-in .form-area .fill-area .one-item .small-form {
+    font-size: 14px;
+  }
 }
 
 body .content .content-in .form-area .fill-area .one-item .input-in {
@@ -474,5 +538,65 @@ body .content .content-in .btn-groups .go-btn {
 body .content .content-in .btn-groups .back-btn {
   background-color: #FFFFFF;
   color: #000;
+}
+
+body #inputWindow .modal-dialog .modal-content {
+  border-radius: 20px;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body {
+  border-radius: 20px;
+  background-color: #FABC08;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body .input-title {
+  font-size: 20px;
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body .number-display {
+  width: 100%;
+  border-radius: 5px;
+  font-size: 30px;
+  padding: 12px 10px;
+  border: none;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body .number-btns button {
+  background-color: #fff;
+  font-size: 30px;
+  width: 75px;
+  height: 75px;
+  border-radius: 5px;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body .the-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body .the-btns button {
+  margin: 0 12.5px;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  padding: 8px 31px;
+  border: none;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body .the-btns .cancel-btn {
+  background-color: #9E9E9E;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body .the-btns .confirm-btn {
+  background-color: #B90202;
 }
 /*# sourceMappingURL=all.css.map */

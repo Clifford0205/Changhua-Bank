@@ -540,8 +540,13 @@ body .content .content-in .btn-groups .back-btn {
   color: #000;
 }
 
+body #inputWindow .modal-dialog {
+  width: 305px;
+}
+
 body #inputWindow .modal-dialog .modal-content {
   border-radius: 20px;
+  border: none;
 }
 
 body #inputWindow .modal-dialog .modal-content .modal-body {
@@ -561,9 +566,19 @@ body #inputWindow .modal-dialog .modal-content .modal-body .number-display {
   font-size: 30px;
   padding: 12px 10px;
   border: none;
+  margin-bottom: 10px;
 }
 
-body #inputWindow .modal-dialog .modal-content .modal-body .number-btns button {
+body #inputWindow .modal-dialog .modal-content .modal-body .number-btns .sort-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body .number-btns .sort-number button {
   background-color: #fff;
   font-size: 30px;
   width: 75px;

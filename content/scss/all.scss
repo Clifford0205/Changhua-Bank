@@ -405,9 +405,11 @@ body {
     #inputWindow {
 
         .modal-dialog {
+            width: 305px;
 
             .modal-content {
                 border-radius: 20px;
+                border: none;
 
                 .modal-body {
                     border-radius: 20px;
@@ -425,15 +427,21 @@ body {
                         font-size: 30px;
                         padding: 12px 10px;
                         border: none;
+                        margin-bottom: 10px;
                     }
 
                     .number-btns {
-                        button {
-                            background-color: #fff;
-                            font-size: 30px;
-                            width: 75px;
-                            height: 75px;
-                            border-radius: 5px;
+                        .sort-number {
+                            display: flex;
+                            justify-content: space-between;
+
+                            button {
+                                background-color: #fff;
+                                font-size: 30px;
+                                width: 75px;
+                                height: 75px;
+                                border-radius: 5px;
+                            }
                         }
                     }
 

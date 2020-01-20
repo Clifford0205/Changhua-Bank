@@ -232,7 +232,7 @@ body {
                         &:nth-last-child(2) {
                             margin-bottom: 0;
 
-                            @include md {
+                            @include lg {
                                 margin-bottom: 20px;
                             }
                         }
@@ -249,7 +249,7 @@ body {
 
                         .little-title {
                             font-weight: bold;
-                            margin: 0 10px;
+                            padding: 0 10px;
                             white-space: nowrap;
 
                             @include lg {
@@ -366,6 +366,7 @@ body {
                 }
             }
 
+
             .white-area {
                 background-color: #fff;
                 border-radius: 20px;
@@ -376,6 +377,79 @@ body {
 
                 .carousel-area {
                     width: 100%;
+                }
+
+                .list-of-winners {
+                    .big-title {
+                        margin: 0 auto;
+                        text-align: center;
+                        font-size: 30px;
+                        font-weight: bold;
+                        width: 340px;
+                        height: 65px;
+                        line-height: 65px;
+                        background-color: #B90202;
+                        color: #fff;
+                        border-radius: 0 0 20px 20px;
+                    }
+
+                    .the-list {
+                        padding: 20px 50px;
+
+                        .info-title {
+                            display: flex;
+
+                            .single-item {
+                                color: #848484;
+                                font-size: 14px;
+                                font-weight: bold;
+                            }
+
+                            .title-mail {
+                                flex: 0 0 25%;
+                            }
+
+                            .title-address {
+                                flex: 0 0 30%;
+                            }
+
+                            .title-name,
+                            .title-mobile,
+                            .title-number {
+                                flex: 0 0 15%;
+                            }
+                        }
+
+                        ul {
+                            .one-list {
+                                font-weight: 20px;
+                                display: flex;
+                                padding: 10px 0;
+                                border-bottom: 1px solid rgb(201, 201, 201);
+
+                                .one-item {
+                                    flex-grow: 1;
+                                }
+
+                                .item-mail {
+                                    flex: 0 0 25%;
+                                }
+
+                                .item-address {
+                                    flex: 1 0 30%;
+                                }
+
+                                .item-name,
+                                .item-mobile,
+                                .item-number {
+                                    flex: 0 0 15%;
+                                }
+
+                            }
+                        }
+                    }
+
+
                 }
             }
 

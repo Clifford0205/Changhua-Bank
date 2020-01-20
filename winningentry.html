@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./content/css/bootstrap.css">
     <link rel="stylesheet" href="./content/css/all.css">
+    <link rel="stylesheet" href="./content/css/style.css">
     <script src="./content/js/jquery-3.4.1.min.js"></script>
     <script src="./content/js/popper.js"></script>
     <script src="./content/js/bootstrap.min.js"></script>
@@ -118,6 +119,8 @@
                     </svg>
                 </button>
 
+                <button type="button" data-toggle="modal" data-target="#winModal">text</button>
+
             </form>
 
             <div class="white-area">
@@ -157,9 +160,9 @@
             <div class="makeup-block"></div>
             <div class="btn-groups">
                 <div class="three-btns">
-                    <button class="finish-btn">結束抽獎</button>
-                    <button class="go-btn">繼續抽獎</button>
-                    <button class="back-btn">回中獎名單</button>
+                    <button class="finish-btn a-btn">結束抽獎</button>
+                    <button class="go-btn a-btn">繼續抽獎</button>
+                    <button class="back-btn a-btn">回中獎名單</button>
                 </div>
             </div>
         </div>
@@ -216,6 +219,55 @@
         </div>
     </div>
     <!-- 計算機Modal結束 -->
+
+    <!-- 中獎名單Modal -->
+    <div class="modal fade" id="winModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <div class="white-area">
+                        <div class="big-title">
+                            中獎名單
+                        </div>
+
+                        <div class="makeup-block"></div>
+                        <div class="list-of-winners">
+                            <div class="the-list">
+                                <div class="info-title">
+                                    <div class="single-item title-name">姓名</div>
+                                    <div class="single-item title-mobile">手機</div>
+                                    <div class="single-item title-mail">電子信箱</div>
+                                    <div class="single-item title-address">地址</div>
+                                    <div class="single-item title-number">會員編號</div>
+                                </div>
+
+                                <ul>
+                                    <li class="one-list">
+                                        <div class="item-name one-item">王大大大</div>
+                                        <div class="item-mobile  one-item">091*******11</div>
+                                        <div class="item-mail  one-item">as*************@hotmail.com</div>
+                                        <div class="item-address  one-item">台北市中山區中**************7號4樓</div>
+                                        <div class="item-number  one-item">XD********89</div>
+                                    </li>
+
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="the-btns">
+                        <button type="button" class="btn btn-secondary cancel-btn transition"
+                            data-dismiss="modal">回列表</button>
+                        <button type="button" class="btn btn-primary confirm-btn transition">輸入下一位</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 中獎Modal結束 -->
 
     <script src="./content/js/all.js"></script>
 

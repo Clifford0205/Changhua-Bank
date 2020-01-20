@@ -135,7 +135,7 @@ table {
 }
 
 * {
-  font-family: 'Noto Sans CJK TC', '微軟正黑體', sans-serif !important;
+  font-family: 'Noto Sans CJK TC', '微軟正黑體', sans-serif;
 }
 
 * a {
@@ -301,6 +301,7 @@ body .content .pos .win:hover {
 body .content .content-in {
   max-width: 1320px;
   margin: 0 auto;
+  position: relative;
 }
 
 body .content .content-in .form-area {
@@ -509,7 +510,6 @@ body .content .content-in .white-area-list {
 }
 
 body .content .content-in .white-area-list .big-title {
-  margin: 0 auto;
   text-align: center;
   font-size: 30px;
   font-weight: bold;
@@ -525,9 +525,44 @@ body .content .content-in .white-area-list .big-title {
           transform: translate(-50%, 0px);
 }
 
+body .content .content-in .white-area-list .download-btns {
+  position: absolute;
+  margin-top: 20px;
+  right: 30px;
+  font-size: 30px;
+}
+
+@media (max-width: 992px) {
+  body .content .content-in .white-area-list .download-btns {
+    right: 50%;
+    -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+    font-size: 30px;
+    margin-top: 80px;
+  }
+}
+
+body .content .content-in .white-area-list .download-btns .pdf:hover .path1::before {
+  color: #e2574c;
+}
+
+body .content .content-in .white-area-list .download-btns .print:hover .path1::before {
+  color: #fabc08;
+}
+
+body .content .content-in .white-area-list .download-btns .excel:hover .path1::before {
+  color: #1e7145;
+}
+
 body .content .content-in .white-area-list .makeup-block {
   width: 100%;
   height: 65px;
+}
+
+@media (max-width: 992px) {
+  body .content .content-in .white-area-list .makeup-block {
+    height: 105px;
+  }
 }
 
 body .content .content-in .white-area-list .list-of-winners {
@@ -536,6 +571,13 @@ body .content .content-in .white-area-list .list-of-winners {
 
 body .content .content-in .white-area-list .list-of-winners .the-list {
   padding: 20px 50px;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list .award-title {
+  color: #B90202;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 body .content .content-in .white-area-list .list-of-winners .the-list .info-title {
@@ -650,9 +692,10 @@ body .content .content-in .btn-groups .three-btns {
       -ms-flex-align: center;
           align-items: center;
   height: 62px;
+  position: relative;
 }
 
-body .content .content-in .btn-groups .three-btns button {
+body .content .content-in .btn-groups .three-btns .a-btn {
   width: 260px;
   height: 40px;
   color: #fff;
@@ -660,6 +703,25 @@ body .content .content-in .btn-groups .three-btns button {
           box-shadow: 0px 3px 6px #00000029;
   margin: 0 20px;
   border-radius: 10px;
+  text-align: center;
+  line-height: 40px;
+}
+
+body .content .content-in .btn-groups .three-btns .go-top {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 0;
+  height: 62px;
+  width: 62px;
+}
+
+body .content .content-in .btn-groups .three-btns .go-top .icon-go_top {
+  font-size: 62px;
+}
+
+body .content .content-in .btn-groups .three-btns .go-top .icon-go_top:hover .path1::before {
+  color: #740000;
 }
 
 body .content .content-in .btn-groups .three-btns .finish-btn {
@@ -876,6 +938,188 @@ body #memberModal .modal-dialog .modal-content .modal-body .the-btns .confirm-bt
 }
 
 body #memberModal .modal-dialog .modal-content .modal-body .the-btns .confirm-btn:hover {
+  background-color: #740000;
+}
+
+body #winModal .modal-dialog {
+  margin-top: 12rem;
+  max-width: 1240px;
+}
+
+@media (max-width: 992px) {
+  body #winModal .modal-dialog {
+    margin: 0 auto;
+    margin-top: 12rem;
+    width: 355px;
+  }
+}
+
+body #winModal .modal-dialog .modal-content {
+  border-radius: 20px;
+  border: none;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body {
+  border-radius: 20px;
+  background-color: #FABC08;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area {
+  border-radius: 13px;
+  background-color: #fff;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .big-title {
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  width: 340px;
+  height: 65px;
+  line-height: 65px;
+  background-color: #B90202;
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0px);
+          transform: translate(-50%, 0px);
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list {
+  padding: 20px 50px;
+  padding-top: 80px;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list .award-title {
+  color: #B90202;
+  font-size: 30px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list .info-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list .info-title .single-item {
+  color: #848484;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list .info-title .title-mail {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list .info-title .title-address {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list .info-title .title-name,
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list .info-title .title-mobile,
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list .info-title .title-number {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list ul .one-list {
+  font-weight: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list ul .one-list .one-item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list ul .one-list .item-mail {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list ul .one-list .item-address {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list ul .one-list .item-name,
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list ul .one-list .item-mobile,
+body #winModal .modal-dialog .modal-content .modal-body .white-area .list-of-winners .the-list ul .one-list .item-number {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .member-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .member-row .title {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .white-area .member-row:first-child {
+  margin-bottom: 20px;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .the-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .the-btns button {
+  margin: 0 12.5px;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  padding: 8px 31px;
+  border: none;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .the-btns .cancel-btn {
+  background-color: #9E9E9E;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .the-btns .cancel-btn:hover {
+  background-color: #7C7C7C;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .the-btns .confirm-btn {
+  background-color: #B90202;
+}
+
+body #winModal .modal-dialog .modal-content .modal-body .the-btns .confirm-btn:hover {
   background-color: #740000;
 }
 /*# sourceMappingURL=all.css.map */

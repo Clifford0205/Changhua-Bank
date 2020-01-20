@@ -1,5 +1,14 @@
 $(document).ready(function() {
   
+    $('.go-top').on('click', function() {
+        // alert($(window).scrollTop())
+        $('html,body').animate(
+            {
+                scrollTop: 0,
+            },
+            1000
+        )
+    })
 })
 
 

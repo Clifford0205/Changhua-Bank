@@ -1,0 +1,96 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('./../fonts/icomoon.eot?lf8txx');
+  src: url('./../fonts/icomoon.eot?lf8txx#iefix') format('embedded-opentype'),
+    url('./../fonts/icomoon.ttf?lf8txx') format('truetype'),
+    url('./../fonts/icomoon.woff?lf8txx') format('woff'),
+    url('./../fonts/icomoon.svg?lf8txx#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-go_top .path1:before {
+  content: "\e900";
+  color: rgb(185, 2, 2);
+}
+
+.icon-go_top .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-btn_excel .path1:before {
+  content: "\e902";
+  color: rgb(125, 125, 125);
+}
+
+.icon-btn_excel .path2:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-btn_excel .path3:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-btn_pdf .path1:before {
+  content: "\e905";
+  color: rgb(125, 125, 125);
+}
+
+.icon-btn_pdf .path2:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-btn_pdf .path3:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-btn_pdf .path4:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(0, 0, 0);
+  opacity: 0.2;
+}
+
+.icon-btn_pdf .path5:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}
+
+.icon-btn_print .path1:before {
+  content: "\e90a";
+  color: rgb(125, 125, 125);
+}
+
+.icon-btn_print .path2:before {
+  content: "\e90b";
+  margin-left: -1em;
+  color: rgb(255, 255, 255);
+}

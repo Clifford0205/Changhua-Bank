@@ -315,7 +315,7 @@ body {
                             font-size: 30px;
                             font-family: NotoSansCJKtc-Bold, Noto Sans CJK TC;
                             font-weight: 700;
-                            transition: 1s;
+                            transition: 0.3s;
                         }
 
                         .c {
@@ -323,7 +323,7 @@ body {
                         }
 
                         stop {
-                            transition: 1s;
+                            transition: 0.3s;
                         }
                     }
 
@@ -376,22 +376,32 @@ body {
                 margin-top: 40px;
                 overflow-x: auto;
 
+
+
+                .big-title {
+                    margin: 0 auto;
+                    text-align: center;
+                    font-size: 30px;
+                    font-weight: bold;
+                    width: 340px;
+                    height: 65px;
+                    line-height: 65px;
+                    background-color: #B90202;
+                    color: #fff;
+                    border-radius: 0 0 20px 20px;
+                    position: absolute;
+                    left: 50%;
+                    transform: translate(-50%, 0px);
+                }
+
+                .makeup-block {
+                    width: 100%;
+                    height: 65px;
+                }
+
                 .list-of-winners {
                     width: 1320px;
 
-
-                    .big-title {
-                        margin: 0 auto;
-                        text-align: center;
-                        font-size: 30px;
-                        font-weight: bold;
-                        width: 340px;
-                        height: 65px;
-                        line-height: 65px;
-                        background-color: #B90202;
-                        color: #fff;
-                        border-radius: 0 0 20px 20px;
-                    }
 
                     .the-list {
                         padding: 20px 50px;
@@ -489,7 +499,7 @@ body {
                     font-size: 14px;
                 }
 
-               
+
 
                 .three-btns {
                     display: flex;
@@ -546,6 +556,10 @@ body {
 
         .modal-dialog {
             width: 305px;
+
+            @include lg {
+                margin: 3rem auto;
+            }
 
             .modal-content {
                 border-radius: 20px;

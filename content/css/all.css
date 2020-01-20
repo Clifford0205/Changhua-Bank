@@ -441,6 +441,11 @@ body .content .content-in .form-area .fill-area .one-item .long {
 body .content .content-in .form-area button {
   background-color: none;
   max-width: 140px;
+  cursor: pointer;
+}
+
+body .content .content-in .form-area button svg {
+  width: 100%;
 }
 
 body .content .content-in .form-area button svg {
@@ -531,13 +536,25 @@ body .content .content-in .btn-groups .finish-btn {
   background-color: #9E9E9E;
 }
 
+body .content .content-in .btn-groups .finish-btn:hover {
+  background-color: #7C7C7C;
+}
+
 body .content .content-in .btn-groups .go-btn {
   background-color: #B90202;
+}
+
+body .content .content-in .btn-groups .go-btn:hover {
+  background-color: #740000;
 }
 
 body .content .content-in .btn-groups .back-btn {
   background-color: #FFFFFF;
   color: #000;
+}
+
+body .content .content-in .btn-groups .back-btn:hover {
+  background-color: #F1F2F6;
 }
 
 body #inputWindow .modal-dialog {
@@ -560,7 +577,7 @@ body #inputWindow .modal-dialog .modal-content .modal-body .input-title {
   margin-bottom: 10px;
 }
 
-body #inputWindow .modal-dialog .modal-content .modal-body .number-display {
+body #inputWindow .modal-dialog .modal-content .modal-body .screen {
   width: 100%;
   border-radius: 5px;
   font-size: 30px;
@@ -576,14 +593,28 @@ body #inputWindow .modal-dialog .modal-content .modal-body .number-btns .sort-nu
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body .number-btns .sort-number:last-child {
+  margin-bottom: 20px;
 }
 
 body #inputWindow .modal-dialog .modal-content .modal-body .number-btns .sort-number button {
   background-color: #fff;
   font-size: 30px;
+  font-weight: bold;
   width: 75px;
   height: 75px;
   border-radius: 5px;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body .number-btns .sort-number button:hover {
+  background-color: #FFEFC2;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body .number-btns .sort-number .clear-btn {
+  font-size: 20px;
 }
 
 body #inputWindow .modal-dialog .modal-content .modal-body .the-btns {
@@ -596,6 +627,7 @@ body #inputWindow .modal-dialog .modal-content .modal-body .the-btns {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  margin-top: 10px;
 }
 
 body #inputWindow .modal-dialog .modal-content .modal-body .the-btns button {
@@ -611,7 +643,103 @@ body #inputWindow .modal-dialog .modal-content .modal-body .the-btns .cancel-btn
   background-color: #9E9E9E;
 }
 
+body #inputWindow .modal-dialog .modal-content .modal-body .the-btns .cancel-btn:hover {
+  background-color: #7C7C7C;
+}
+
 body #inputWindow .modal-dialog .modal-content .modal-body .the-btns .confirm-btn {
   background-color: #B90202;
+}
+
+body #inputWindow .modal-dialog .modal-content .modal-body .the-btns .confirm-btn:hover {
+  background-color: #740000;
+}
+
+body #memberModal .modal-dialog {
+  width: 380px;
+  margin-top: 12rem;
+}
+
+@media (max-width: 992px) {
+  body #memberModal .modal-dialog {
+    margin: 0 auto;
+    margin-top: 12rem;
+    width: 355px;
+  }
+}
+
+body #memberModal .modal-dialog .modal-content {
+  border-radius: 20px;
+  border: none;
+}
+
+body #memberModal .modal-dialog .modal-content .modal-body {
+  border-radius: 20px;
+  background-color: #FABC08;
+}
+
+body #memberModal .modal-dialog .modal-content .modal-body .white-area {
+  border-radius: 13px;
+  background-color: #fff;
+  padding: 22px 20px;
+}
+
+body #memberModal .modal-dialog .modal-content .modal-body .white-area .member-row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+body #memberModal .modal-dialog .modal-content .modal-body .white-area .member-row .title {
+  font-size: 14px;
+  color: #000000;
+  font-weight: bold;
+  margin-right: 15px;
+  white-space: nowrap;
+}
+
+body #memberModal .modal-dialog .modal-content .modal-body .white-area .member-row:first-child {
+  margin-bottom: 20px;
+}
+
+body #memberModal .modal-dialog .modal-content .modal-body .the-btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+
+body #memberModal .modal-dialog .modal-content .modal-body .the-btns button {
+  margin: 0 12.5px;
+  -webkit-box-shadow: 0px 3px 6px #00000029;
+          box-shadow: 0px 3px 6px #00000029;
+  border-radius: 10px;
+  padding: 8px 31px;
+  border: none;
+}
+
+body #memberModal .modal-dialog .modal-content .modal-body .the-btns .cancel-btn {
+  background-color: #9E9E9E;
+}
+
+body #memberModal .modal-dialog .modal-content .modal-body .the-btns .cancel-btn:hover {
+  background-color: #7C7C7C;
+}
+
+body #memberModal .modal-dialog .modal-content .modal-body .the-btns .confirm-btn {
+  background-color: #B90202;
+}
+
+body #memberModal .modal-dialog .modal-content .modal-body .the-btns .confirm-btn:hover {
+  background-color: #740000;
 }
 /*# sourceMappingURL=all.css.map */

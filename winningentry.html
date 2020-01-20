@@ -89,6 +89,7 @@
                 </div>
 
                 <button type="button" class="button-area " data-toggle="modal" data-target="#inputWindow">
+
                     <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="140"
                         height="140.001" viewBox="0 0 140 140.001">
                         <defs>
@@ -108,8 +109,8 @@
                         </defs>
                         <circle class="a" cx="70" cy="70" r="70" transform="translate(0)" /><text class="b"
                             transform="translate(40 62.87)">
-                            <tspan x="0" y="0">開始</tspan>
-                            <tspan x="0" y="38">抽獎</tspan>
+                            <tspan x="0" y="0">中獎</tspan>
+                            <tspan x="0" y="38">輸入</tspan>
                         </text>
                         <path class="c"
                             d="M70,140A70.019,70.019,0,0,1,42.753,5.5a70.018,70.018,0,0,1,54.494,129A69.56,69.56,0,0,1,70,140ZM70,10a60,60,0,1,0,60,60A60.068,60.068,0,0,0,70,10Z"
@@ -164,38 +165,56 @@
 
     </section>
 
-    <!-- Modal -->
+    <!-- 計算機Modal -->
     <div class="modal fade" id="inputWindow" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
         aria-hidden="true">
         <div class="modal-dialog" role="document">
             <div class="modal-content">
                 <div class="modal-body">
                     <div class="input-title">中獎號碼</div>
-                    <input type="text" class="number-display">
+                    <input type="number" class="screen">
 
                     <div class="number-btns">
                         <div class="sort-number">
-                            <button type="button">1</button>
-                            <button type="button">2</button>
-                            <button type="button">3</button>
+                            <button type="button" class="num" value="1">1</button>
+                            <button type="button" class="num" value="2">2</button>
+                            <button type="button" class="num" value="3">3</button>
+                        </div>
+
+                        <div class="sort-number">
+                            <button type="button" class="num" value="4">4</button>
+                            <button type="button" class="num" value="5">5</button>
+                            <button type="button" class="num" value="6">6</button>
+                        </div>
+
+                        <div class="sort-number">
+                            <button type="button" class="num" value="7">7</button>
+                            <button type="button" class="num" value="8">8</button>
+                            <button type="button" class="num" value="9">9</button>
+                        </div>
+
+                        <div class="sort-number">
+                            <button type="button" class="clear-btn">Clear</button>
+                            <button type="button" class="num" value="0">0</button>
+                            <button type="button" class="delete-one"> <img src="./content/img/icons/icn_delete.svg"
+                                    alt=""> </button>
                         </div>
                     </div>
 
                     <div class="the-btns">
-                        <button type="button" class="btn btn-secondary cancel-btn" data-dismiss="modal">取消</button>
-                        <button type="button" class="btn btn-primary confirm-btn">確認</button>
+                        <button type="button" class="btn btn-secondary cancel-btn transition"
+                            data-dismiss="modal">取&nbsp;&nbsp;&nbsp;消</button>
+                        <button type="button"
+                            class="btn btn-primary confirm-btn transition">確&nbsp;&nbsp;&nbsp;認</button>
                     </div>
                 </div>
 
             </div>
         </div>
     </div>
+    <!-- 計算機Modal結束 -->
 
     <script src="./content/js/all.js"></script>
-
-    <script>
-
-    </script>
 
 </body>
 

@@ -499,6 +499,103 @@ body .content .content-in .form-area button:hover svg .b {
   font-weight: 700;
 }
 
+body .content .content-in .white-area-list {
+  background-color: #fff;
+  border-radius: 20px;
+  -webkit-box-shadow: 0px 6px 20px #B15F0080;
+          box-shadow: 0px 6px 20px #B15F0080;
+  margin-top: 40px;
+  overflow-x: auto;
+}
+
+body .content .content-in .white-area-list .list-of-winners {
+  width: 1320px;
+}
+
+body .content .content-in .white-area-list .list-of-winners .big-title {
+  margin: 0 auto;
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  width: 340px;
+  height: 65px;
+  line-height: 65px;
+  background-color: #B90202;
+  color: #fff;
+  border-radius: 0 0 20px 20px;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list {
+  padding: 20px 50px;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list .info-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list .info-title .single-item {
+  color: #848484;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list .info-title .title-mail {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list .info-title .title-address {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 30%;
+          flex: 0 0 30%;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list .info-title .title-name,
+body .content .content-in .white-area-list .list-of-winners .the-list .info-title .title-mobile,
+body .content .content-in .white-area-list .list-of-winners .the-list .info-title .title-number {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list ul .one-list {
+  font-weight: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 10px 0;
+  border-bottom: 1px solid #c9c9c9;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list ul .one-list .one-item {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list ul .one-list .item-mail {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 25%;
+          flex: 0 0 25%;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list ul .one-list .item-address {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 0 30%;
+          flex: 1 0 30%;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list ul .one-list .item-name,
+body .content .content-in .white-area-list .list-of-winners .the-list ul .one-list .item-mobile,
+body .content .content-in .white-area-list .list-of-winners .the-list ul .one-list .item-number {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 15%;
+          flex: 0 0 15%;
+}
+
 body .content .content-in .white-area {
   background-color: #fff;
   border-radius: 20px;
@@ -512,132 +609,72 @@ body .content .content-in .white-area .carousel-area {
   width: 100%;
 }
 
-body .content .content-in .white-area .list-of-winners .big-title {
-  margin: 0 auto;
-  text-align: center;
-  font-size: 30px;
-  font-weight: bold;
-  width: 340px;
+body .content .content-in .makeup-block {
   height: 65px;
-  line-height: 65px;
-  background-color: #B90202;
-  color: #fff;
-  border-radius: 0 0 20px 20px;
-}
-
-body .content .content-in .white-area .list-of-winners .the-list {
-  padding: 20px 50px;
-}
-
-body .content .content-in .white-area .list-of-winners .the-list .info-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-body .content .content-in .white-area .list-of-winners .the-list .info-title .single-item {
-  color: #848484;
-  font-size: 14px;
-  font-weight: bold;
-}
-
-body .content .content-in .white-area .list-of-winners .the-list .info-title .title-mail {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
-}
-
-body .content .content-in .white-area .list-of-winners .the-list .info-title .title-address {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 30%;
-          flex: 0 0 30%;
-}
-
-body .content .content-in .white-area .list-of-winners .the-list .info-title .title-name,
-body .content .content-in .white-area .list-of-winners .the-list .info-title .title-mobile,
-body .content .content-in .white-area .list-of-winners .the-list .info-title .title-number {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 15%;
-          flex: 0 0 15%;
-}
-
-body .content .content-in .white-area .list-of-winners .the-list ul .one-list {
-  font-weight: 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  padding: 10px 0;
-  border-bottom: 1px solid #c9c9c9;
-}
-
-body .content .content-in .white-area .list-of-winners .the-list ul .one-list .one-item {
-  -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
-}
-
-body .content .content-in .white-area .list-of-winners .the-list ul .one-list .item-mail {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 25%;
-          flex: 0 0 25%;
-}
-
-body .content .content-in .white-area .list-of-winners .the-list ul .one-list .item-address {
-  -webkit-box-flex: 1;
-      -ms-flex: 1 0 30%;
-          flex: 1 0 30%;
-}
-
-body .content .content-in .white-area .list-of-winners .the-list ul .one-list .item-name,
-body .content .content-in .white-area .list-of-winners .the-list ul .one-list .item-mobile,
-body .content .content-in .white-area .list-of-winners .the-list ul .one-list .item-number {
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 15%;
-          flex: 0 0 15%;
+  width: 100%;
 }
 
 body .content .content-in .btn-groups {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(245, 163, 0, 0.5);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+
+@media (max-width: 992px) {
+  body .content .content-in .btn-groups {
+    font-size: 14px;
+  }
+}
+
+body .content .content-in .btn-groups .three-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 62px;
 }
 
-body .content .content-in .btn-groups button {
+body .content .content-in .btn-groups .three-btns button {
   width: 260px;
   height: 40px;
   color: #fff;
   -webkit-box-shadow: 0px 3px 6px #00000029;
           box-shadow: 0px 3px 6px #00000029;
   margin: 0 20px;
-  margin-top: 25px;
   border-radius: 10px;
 }
 
-body .content .content-in .btn-groups .finish-btn {
+body .content .content-in .btn-groups .three-btns .finish-btn {
   background-color: #9E9E9E;
 }
 
-body .content .content-in .btn-groups .finish-btn:hover {
+body .content .content-in .btn-groups .three-btns .finish-btn:hover {
   background-color: #7C7C7C;
 }
 
-body .content .content-in .btn-groups .go-btn {
+body .content .content-in .btn-groups .three-btns .go-btn {
   background-color: #B90202;
 }
 
-body .content .content-in .btn-groups .go-btn:hover {
+body .content .content-in .btn-groups .three-btns .go-btn:hover {
   background-color: #740000;
 }
 
-body .content .content-in .btn-groups .back-btn {
+body .content .content-in .btn-groups .three-btns .back-btn {
   background-color: #FFFFFF;
   color: #000;
 }
 
-body .content .content-in .btn-groups .back-btn:hover {
+body .content .content-in .btn-groups .three-btns .back-btn:hover {
   background-color: #F1F2F6;
 }
 

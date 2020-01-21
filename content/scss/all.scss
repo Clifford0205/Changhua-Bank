@@ -207,6 +207,7 @@ body {
                 align-items: center;
                 justify-content: space-between;
 
+
                 @include lg {
                     flex-wrap: wrap;
                     justify-content: center;
@@ -220,6 +221,7 @@ body {
 
                     @include lg {
                         flex: 0 0 100%;
+                        margin-bottom: 20px;
                     }
 
                     .one-item {
@@ -296,6 +298,7 @@ body {
                     background-color: none;
                     max-width: 140px;
                     cursor: pointer;
+                    padding: 0;
 
 
                     svg {
@@ -545,7 +548,11 @@ body {
                     .carousel {
 
                         .carousel-indicators {
-                            bottom: 40px;
+                            bottom: 50px;
+
+                            @include lg {
+                                bottom: 10%;
+                            }
 
                             li {
                                 width: 10px;
@@ -574,12 +581,20 @@ body {
                             outline: black;
                             background-color: #fff;
                             background-size: 100%, 100%;
-
                             background-image: none;
+
+                            @include lg {
+                                width: 30px;
+                                height: 40px;
+                            }
                         }
 
                         .carousel-control-next-icon {
                             transform: translate(-56%, 0);
+
+                            @include lg {
+                                transform: translate(0, 0);
+                            }
 
                             &::after {
                                 background-image: url('../img/icons/icn_arrow_r_b.svg');
@@ -590,11 +605,21 @@ body {
                                 margin-top: 50%;
                                 transform: translate(4px, -28%);
                                 content: '';
+
+                                @include lg {
+                                    transform: translate(0, -28%);
+                                    width: 30px;
+                                    height: 30px;
+                                }
                             }
                         }
 
                         .carousel-control-prev-icon {
                             transform: translate(56%, 0);
+
+                            @include lg {
+                                transform: translate(0, 0);
+                            }
 
                             &::after {
                                 background-image: url('../img/icons/icn_arrow_l_b.svg');
@@ -605,6 +630,12 @@ body {
                                 margin-top: 50%;
                                 transform: translate(-4px, -28%);
                                 content: '';
+
+                                @include lg {
+                                    transform: translate(0, -28%);
+                                    width: 30px;
+                                    height: 30px;
+                                }
                             }
                         }
                     }
@@ -863,12 +894,11 @@ body {
 
                     .the-btns {
                         display: flex;
-                        justify-content: center;
+                        justify-content: space-between;
                         align-items: center;
                         margin-top: 10px;
 
                         button {
-                            margin: 0 12.5px;
                             box-shadow: 0px 3px 6px #00000029;
                             border-radius: 10px;
                             padding: 8px 31px;

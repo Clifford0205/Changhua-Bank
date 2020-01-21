@@ -590,12 +590,15 @@ body .content .content-in .white-area-list .list-of-winners .the-list .award-tit
   font-size: 30px;
   font-weight: bold;
   margin-bottom: 20px;
+  padding-left: 10px;
 }
 
 body .content .content-in .white-area-list .list-of-winners .the-list .info-title {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-bottom: 10px;
+  padding-left: 10px;
 }
 
 body .content .content-in .white-area-list .list-of-winners .the-list .info-title .single-item {
@@ -629,8 +632,17 @@ body .content .content-in .white-area-list .list-of-winners .the-list ul .one-li
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 10px 0;
+  padding: 10px;
   border-bottom: 1px solid #c9c9c9;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list ul .one-list:hover {
+  background-color: #F9E89B;
+  border-radius: 10px;
+}
+
+body .content .content-in .white-area-list .list-of-winners .the-list ul .one-list:last-child {
+  border-bottom: none;
 }
 
 body .content .content-in .white-area-list .list-of-winners .the-list ul .one-list .one-item {
@@ -795,8 +807,21 @@ body .content .content-in .btn-groups .three-btns .go-top {
   width: 62px;
 }
 
+@media (max-width: 992px) {
+  body .content .content-in .btn-groups .three-btns .go-top {
+    height: 30px;
+    width: 30px;
+  }
+}
+
 body .content .content-in .btn-groups .three-btns .go-top .icon-go_top {
   font-size: 62px;
+}
+
+@media (max-width: 992px) {
+  body .content .content-in .btn-groups .three-btns .go-top .icon-go_top {
+    font-size: 35px;
+  }
 }
 
 body .content .content-in .btn-groups .three-btns .go-top .icon-go_top:hover .path1::before {
@@ -1156,6 +1181,7 @@ body #winModal .modal-dialog .modal-content .modal-body .the-btns {
   margin-top: 10px;
 }
 
+body #winModal .modal-dialog .modal-content .modal-body .the-btns a,
 body #winModal .modal-dialog .modal-content .modal-body .the-btns button {
   margin: 0 12.5px;
   -webkit-box-shadow: 0px 3px 6px #00000029;
@@ -1163,10 +1189,19 @@ body #winModal .modal-dialog .modal-content .modal-body .the-btns button {
   border-radius: 10px;
   padding: 8px 31px;
   border: none;
+  width: 260px;
+}
+
+@media (max-width: 992px) {
+  body #winModal .modal-dialog .modal-content .modal-body .the-btns a,
+  body #winModal .modal-dialog .modal-content .modal-body .the-btns button {
+    width: auto;
+  }
 }
 
 body #winModal .modal-dialog .modal-content .modal-body .the-btns .cancel-btn {
   background-color: #9E9E9E;
+  color: #fff;
 }
 
 body #winModal .modal-dialog .modal-content .modal-body .the-btns .cancel-btn:hover {

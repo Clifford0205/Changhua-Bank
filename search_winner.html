@@ -29,7 +29,7 @@
                 </h1>
             </a>
 
-            <a class="login transition">
+            <a class="login transition" data-toggle="modal" data-target="#memberModal">
                 <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 30 30">
                     <rect class="man" width="30" height="30" />
                     <path class="outer"
@@ -46,14 +46,9 @@
                 <div class="fill-area">
                     <div class="unit one-item">
                         <div class="little-title">單　　位</div>
-                        <select name="" class="long small-form">
+                        <select name="" class=" small-form">
                             <option value="">請選擇單位</option>
                         </select>
-
-                        <!-- <select name="" >
-                            <option value="">請輸入起始密碼</option>
-                        </select> -->
-                        <input type="text" placeholder="請輸入起始密碼" class="small-form input-in">
                     </div>
 
 
@@ -527,11 +522,41 @@
 
     </section>
 
+
+
+    <!-- 會員Modal -->
+    <div class="modal fade" id="memberModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <div class="white-area">
+                        <div class="member-unit member-row">
+                            <p class="title">單 位</p>
+                            <p>彰化銀行抽獎部門彰化銀行抽獎部門</p>
+                        </div>
+
+                        <div class="member-name member-row">
+                            <p class="title">姓 名</p>
+                            <p>王大大</p>
+                        </div>
+                    </div>
+
+                    <div class="the-btns">
+                        <button type="button" class="btn btn-secondary cancel-btn transition"
+                            data-dismiss="modal">取&nbsp;&nbsp;&nbsp;消</button>
+                        <button type="button"
+                            class="btn btn-primary confirm-btn transition">確&nbsp;&nbsp;&nbsp;認</button>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- 會員Modal結束 -->
+
     <script src="./content/js/all.js"></script>
-
-    <script>
-
-    </script>
 
 </body>
 

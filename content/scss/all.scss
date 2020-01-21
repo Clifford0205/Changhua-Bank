@@ -291,6 +291,7 @@ body {
                     }
                 }
 
+                a,
                 button {
                     background-color: none;
                     max-width: 140px;
@@ -531,6 +532,24 @@ body {
 
                     .carousel {
 
+                        .carousel-indicators {
+                            bottom: 40px;
+
+                            li {
+                                width: 10px;
+                                height: 10px;
+                                background-color: #FFFFFF99;
+                                border: 1px solid #ffffff;
+                                border-radius: 10px;
+                                margin-right: 5px;
+                                margin-left: 5px;
+                            }
+
+                            .active {
+                                background-color: #FABC08;
+                            }
+                        }
+
                         .carousel-control-next,
                         .carousel-control-prev {
                             width: unset;
@@ -643,24 +662,7 @@ body {
                             }
                         }
 
-                        // svg {
-                        //     .arrow {
-                        //         fill: #fff;
-                        //     }
 
-                        //     .bg {
-                        //         fill: #b90202;
-
-                        //     }
-                        // }
-
-                        // &:hover {
-                        //     svg {
-                        //         .bg {
-                        //             fill: #740000;
-                        //         }
-                        //     }
-                        // }
                     }
 
                     .finish-btn {
@@ -910,6 +912,10 @@ body {
                             position: absolute;
                             left: 50%;
                             transform: translate(-50%, 0px);
+
+                            @include lg {
+                                width: 220px;
+                            }
                         }
 
                         .list-of-winners {
@@ -919,65 +925,46 @@ body {
                             .the-list {
                                 padding: 20px 50px;
                                 padding-top: 80px;
+                                position: relative;
 
-                                .award-title {
-                                    color: #B90202;
-                                    font-size: 30px;
-                                    font-weight: bold;
-                                    margin-bottom: 20px;
-                                }
-
-                                .info-title {
+                                .winner {
                                     display: flex;
+                                    justify-content: space-between;
+
+                                    @include lg {
+                                        display: block;
+                                    }
 
                                     .single-item {
-                                        color: #848484;
                                         font-size: 14px;
-                                        font-weight: bold;
+                                        color: #848484;
+                                        margin-bottom: 20px;
+
+                                        @include lg {
+                                            margin-bottom: 5px;
+                                        }
                                     }
 
-                                    .title-mail {
-                                        flex: 0 0 25%;
-                                    }
-
-                                    .title-address {
-                                        flex: 0 0 30%;
-                                    }
-
-                                    .title-name,
-                                    .title-mobile,
-                                    .title-number {
-                                        flex: 0 0 15%;
+                                    .one-item {
+                                        font-size: 18px;
+                                        margin-bottom: 20px;
                                     }
                                 }
 
-                                ul {
-                                    .one-list {
-                                        font-weight: 20px;
-                                        display: flex;
-                                        padding: 10px 0;
-                                        border-bottom: 1px solid rgb(201, 201, 201);
+                                .cancel {
+                                    position: absolute;
+                                    left: 15px;
+                                    top: 115px;
 
-                                        .one-item {
-                                            flex-grow: 1;
-                                        }
-
-                                        .item-mail {
-                                            flex: 0 0 25%;
-                                        }
-
-                                        .item-address {
-                                            flex: 1 0 30%;
-                                        }
-
-                                        .item-name,
-                                        .item-mobile,
-                                        .item-number {
-                                            flex: 0 0 15%;
-                                        }
-
+                                    @include lg {
+                                        left: unset;
+                                        right: 15px;
+                                        top: 75px;
                                     }
                                 }
+
+
+
                             }
 
 

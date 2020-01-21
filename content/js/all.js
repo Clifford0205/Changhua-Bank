@@ -1,5 +1,6 @@
 $(document).ready(function() {
-  
+    
+    //視窗移動到最上方
     $('.go-top').on('click', function() {
         // alert($(window).scrollTop())
         $('html,body').animate(
@@ -8,6 +9,14 @@ $(document).ready(function() {
             },
             1000
         )
+    });
+
+
+    //modal開啟modal
+    $('body').on('hidden.bs.modal', function(e) {
+        if ($('.modal.show').length > 0) {
+            $('body').addClass('modal-open')
+        }
     })
 })
 

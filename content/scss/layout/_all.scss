@@ -234,7 +234,7 @@ body {
                         .b {
                             fill: #fff;
                             font-size: 30px;
-                            font-family: NotoSansCJKtc-Bold, Noto Sans CJK TC;
+                            font-family: 'Noto Sans CJK TC', '微軟正黑體', sans-serif;
                             font-weight: 700;
                             transition: 0.3s;
                         }
@@ -279,7 +279,7 @@ body {
                             .b {
                                 fill: #f2aeae;
                                 font-size: 30px;
-                                font-family: NotoSansCJKtc-Bold, Noto Sans CJK TC;
+                                font-family: 'Noto Sans CJK TC', '微軟正黑體', sans-serif;
                                 font-weight: 700;
                             }
                         }
@@ -296,6 +296,10 @@ body {
                 // position: relative;
 
 
+                .big-title.fixed-now{
+                    position: fixed;
+                    top: 0;
+                } 
 
                 .big-title {
                     text-align: center;
@@ -308,8 +312,15 @@ body {
                     color: #fff;
                     border-radius: 0 0 20px 20px;
                     position: absolute;
+                    // top: 0;
                     left: 50%;
                     transform: translate(-50%, 0px);
+                }
+
+                .download-btns.fixed-now {
+                    position: fixed;
+                    top: 20px;
+                    right: 15%;
                 }
 
                 .download-btns {
@@ -668,10 +679,20 @@ body {
     }
 
     // Modal區域
+    .modal-backdrop.show {
+        opacity: 0.8;
+    }
+
     #inputWindow {
+
+        .modal-backdrop {
+            opacity: 0.9 !important;
+        }
 
         .modal-dialog {
             width: 305px;
+            margin-top: 7.5rem;
+
 
             @include lg {
                 margin: 3rem auto;

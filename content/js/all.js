@@ -17,6 +17,36 @@ $(document).ready(function() {
         if ($('.modal.show').length > 0) {
             $('body').addClass('modal-open')
         }
+    });
+
+    $('#inputWindow').on('hidden.bs.modal',function(){
+        let screen=document.querySelector('.screen');
+        screen.value="";
+    })
+
+   
+    let titleTop=$('.big-title').offset().top ;
+    let btnsTop =$('.download-btns').offset().top ;
+    $(window).on('scroll',function(){
+        var scrollPos = $(window).scrollTop();
+        console.log('上方距離',titleTop);
+        console.log(scrollPos);
+        if(titleTop<scrollPos){
+            console.log('超過了');
+            $('.big-title').addClass('fixed-now')
+        }
+        else{
+            $('.big-title').removeClass('fixed-now')
+        }
+
+        if(btnsTop<scrollPos){
+            $('.download-btns').addClass('fixed-now')
+        }
+        else{
+            $('.download-btns').removeClass('fixed-now')
+        }
+
+
     })
 })
 
@@ -26,7 +56,14 @@ let allnum=document.querySelectorAll('.num');
 let screen=document.querySelector('.screen');
 let clear =document.querySelector('.clear-btn');
 let deleteOne=document.querySelector('.delete-one');
+let whiteAreaList=document.querySelector('.white-area-list');
+let bigTitle=whiteAreaList.querySelector('.big-title');
 
+
+// let y=whiteAreaList.scrollTop ;
+// window.addEventListener('scroll',function(){
+//     console.log('上方距離',y)
+// },false)
 
 if(screen){
     for(let i=0;i<allnum.length;i++){

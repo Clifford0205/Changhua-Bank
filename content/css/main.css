@@ -88,7 +88,6 @@ video {
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
   vertical-align: baseline;
 }
 
@@ -1262,4 +1261,4 @@ body #winModal .modal-dialog .modal-content .modal-body .the-btns .confirm-btn {
 body #winModal .modal-dialog .modal-content .modal-body .the-btns .confirm-btn:hover {
   background-color: #740000;
 }
-/*# sourceMappingURL=all.css.map */
+/*# sourceMappingURL=main.css.map */

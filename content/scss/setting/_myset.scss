@@ -1,0 +1,42 @@
+* {
+    font-family: 'Noto Sans CJK TC', '微軟正黑體', sans-serif;
+    // font-weight: 200;
+
+    a {
+        color: #000;
+
+        &:hover {
+            text-decoration: none;
+            color: #000;
+        }
+    }
+
+    input {
+        &:focus {
+            outline: none;
+        }
+    }
+
+    button {
+        background-color: unset;
+        border: none;
+    }
+
+    button:focus {
+        outline: 0px dotted;
+        outline: 0px auto -webkit-focus-ring-color;
+    }
+}
+
+.modal-open {
+    padding: 0 !important;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+
+    .transition {
+        transition: 0.4s;
+    }
+}

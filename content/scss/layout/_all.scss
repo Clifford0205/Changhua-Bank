@@ -293,13 +293,38 @@ body {
                 box-shadow: 0px 6px 20px #B15F0080;
                 margin-top: 40px;
                 overflow-x: auto;
+                overflow-y: auto;
+                height: 800px;
+
                 // position: relative;
+                .top-bar {
+                    max-width: 1320px;
+                    height: 65px;
+                    width: 100%;
+                    background: #fff;
+                    position: sticky;
+                    top: 0;
+                    left: 0;
+                    z-index: 200;
+                    height: 100px;
 
 
-                .big-title.fixed-now{
+                    @include lg {
+                        height: 125px;
+                    }
+                }
+
+                .for-pos {
+                    position: relative;
+                }
+
+                .top-bar.fixed-now {
                     position: fixed;
                     top: 0;
-                } 
+                }
+
+
+
 
                 .big-title {
                     text-align: center;
@@ -317,11 +342,7 @@ body {
                     transform: translate(-50%, 0px);
                 }
 
-                .download-btns.fixed-now {
-                    position: fixed;
-                    top: 20px;
-                    right: 15%;
-                }
+
 
                 .download-btns {
                     position: absolute;
@@ -370,10 +391,15 @@ body {
                 .makeup-block {
                     width: 100%;
                     height: 65px;
+                    display: none;
 
                     @include lg {
                         height: 105px;
                     }
+                }
+
+                .makeup-block.show {
+                    display: block;
                 }
 
                 .list-of-winners {
@@ -389,12 +415,38 @@ body {
                             font-weight: bold;
                             margin-bottom: 20px;
                             padding-left: 10px;
+                            position: sticky;
+                            top: 100px;
+                            background-color: #fff;
+                            height: 50px;
+
+                            @include lg {
+                                top: 125px;
+                                height: 75px;
+                            }
+
+
+                        }
+
+                        .info-title.short {
+                            top: 100px;
+
+                            @include lg {
+                                top: 125px;
+                            }
                         }
 
                         .info-title {
                             display: flex;
                             margin-bottom: 10px;
                             padding-left: 10px;
+                            position: sticky;
+                            top: 150px;
+                            background-color: #fff;
+
+                            @include lg {
+                                top: 200px;
+                            }
 
                             .single-item {
                                 color: #848484;

@@ -133,40 +133,46 @@ table {
   border-spacing: 0;
 }
 
-* {
-  font-family: 'Noto Sans CJK TC', '微軟正黑體', sans-serif;
-}
-
-* a {
-  color: #000;
-}
-
-* a:hover {
-  text-decoration: none;
-  color: #000;
-}
-
-* input:focus {
-  outline: none;
-}
-
-* button {
-  background-color: unset;
-  border: none;
-}
-
-* button:focus {
-  outline: 0px dotted;
-  outline: 0px auto -webkit-focus-ring-color;
-}
-
 .modal-open {
   padding: 0 !important;
 }
 
 body {
+  font-family: 'Noto Sans CJK TC', '微軟正黑體', sans-serif;
   margin: 0;
   padding: 0;
+}
+
+body button,
+body input,
+body optgroup,
+body select,
+body textarea {
+  font-family: 'Noto Sans CJK TC', '微軟正黑體', sans-serif;
+  line-height: normal;
+}
+
+body a {
+  color: #000;
+}
+
+body a:hover {
+  text-decoration: none;
+  color: #000;
+}
+
+body input:focus {
+  outline: none;
+}
+
+body button {
+  background-color: unset;
+  border: none;
+}
+
+body button:focus {
+  outline: 0px dotted;
+  outline: 0px auto -webkit-focus-ring-color;
 }
 
 body .transition {
@@ -441,7 +447,7 @@ body .content .content-in .form-area .fill-area .one-item .long {
 
 body .content .content-in .form-area a,
 body .content .content-in .form-area button {
-  background-color: none;
+  background-color: transparent;
   max-width: 140px;
   cursor: pointer;
   padding: 0;

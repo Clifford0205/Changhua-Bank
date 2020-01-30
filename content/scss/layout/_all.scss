@@ -349,6 +349,7 @@ body {
                     margin-top: 20px;
                     right: 30px;
                     font-size: 30px;
+                    display: flex;
 
                     @include lg {
                         right: 50%;

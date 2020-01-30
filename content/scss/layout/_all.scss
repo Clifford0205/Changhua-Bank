@@ -683,15 +683,15 @@ body {
                         width: 62px;
 
                         @include lg {
-                            height: 50px;
-                            width: 50px;
+                            height: 40px;
+                            width: 40px;
                         }
 
                         .icon-go_top {
                             font-size: 62px;
 
                             @include lg {
-                                font-size: 50px;
+                                font-size: 40px;
                             }
 
                             &:hover {

@@ -530,6 +530,12 @@ body .content .content-in .white-area-list {
   height: 800px;
 }
 
+@media (max-width: 992px) {
+  body .content .content-in .white-area-list {
+    height: auto;
+  }
+}
+
 body .content .content-in .white-area-list .top-bar {
   max-width: 1320px;
   height: 65px;

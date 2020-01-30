@@ -296,6 +296,11 @@ body {
                 overflow-y: auto;
                 height: 800px;
 
+                @include lg {
+                    height: auto;
+
+                }
+
                 // position: relative;
                 .top-bar {
                     max-width: 1320px;

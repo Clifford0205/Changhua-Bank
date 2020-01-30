@@ -350,6 +350,7 @@ body {
                     right: 30px;
                     font-size: 30px;
                     display: flex;
+                    justify-content: center;
 
                     @include lg {
                         right: 50%;
@@ -424,6 +425,7 @@ body {
                             @include lg {
                                 top: 125px;
                                 height: 75px;
+                                position: static;
                             }
 
 
@@ -447,6 +449,7 @@ body {
 
                             @include lg {
                                 top: 200px;
+                                position: static;
                             }
 
                             .single-item {

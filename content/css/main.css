@@ -582,6 +582,9 @@ body .content .content-in .white-area-list .download-btns {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 @media (max-width: 992px) {
@@ -647,6 +650,7 @@ body .content .content-in .white-area-list .list-of-winners .the-list .award-tit
   body .content .content-in .white-area-list .list-of-winners .the-list .award-title {
     top: 125px;
     height: 75px;
+    position: static;
   }
 }
 
@@ -675,6 +679,7 @@ body .content .content-in .white-area-list .list-of-winners .the-list .info-titl
 @media (max-width: 992px) {
   body .content .content-in .white-area-list .list-of-winners .the-list .info-title {
     top: 200px;
+    position: static;
   }
 }
 

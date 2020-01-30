@@ -881,6 +881,7 @@ body .content .content-in .btn-groups {
   bottom: 0;
   left: 0;
   right: 0;
+  z-index: 500;
   background-color: rgba(245, 163, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
